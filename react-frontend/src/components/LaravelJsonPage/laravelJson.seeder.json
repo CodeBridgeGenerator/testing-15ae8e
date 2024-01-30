@@ -1,0 +1,1067 @@
+[
+    {
+        "projectName": "laravel",
+        "description": "laravel test 23 jan 2024",
+        "auth": "jwt",
+        "database": {
+            "pathToLogo": {
+                "s": "/assets/applications_logos/mongodb-s.png",
+                "l": "/assets/applications_logos/mongodb.png"
+            },
+            "appName": "mongodb-database",
+            "disabled": false,
+            "type": "database",
+            "name": "mongodb",
+            "label": "MongoDB",
+            "__v": 0,
+            "databaseUrl": "mongodb://localhost:27017/",
+            "appGenerationTemplates": [],
+            "serviceGenerationTemplates": [],
+            "isHidden": false,
+            "isOpenSource": true,
+            "databaseType": "mongodb"
+        },
+        "stack": [
+            {
+                "appName": "laravel-backend",
+                "pathToLogo": {
+                    "s": "/assets/applications_logos/laravel-s.png",
+                    "l": "/assets/applications_logos/laravel.png"
+                },
+                "disabled": false,
+                "type": "backend",
+                "name": "laravel",
+                "label": "PHP Laravel",
+                "appGenerationTemplates": [
+                    {
+                        "dbService": "templates",
+                        "name": "php-laravel-mysql-package-json",
+                        "repoName": "codeb_laravelV10_template",
+                        "ref": "yoong",
+                        "userName": "kanacb",
+                        "githubRepoLocation": "https://github.com/kanacb/codeb_laravelV10_template.git",
+                        "skip": false,
+                        "codeChanges": [
+                            {
+                                "location": "",
+                                "filename": "package.json",
+                                "templateLocalFile": "",
+                                "changes": [
+                                    {
+                                        "typeOfChange": "string-replace",
+                                        "from": "~cb-app-name~",
+                                        "to": "stack.appName",
+                                        "_id": "65af6563853ef8535f03710c"
+                                    }
+                                ],
+                                "_id": "65af6563853ef8535f03710b"
+                            },
+                            {
+                                "location": "src/components/common/__test__/",
+                                "filename": "AreYouSureDialog.test.ts",
+                                "templateLocalFile": "./angular_prime/TestScripts/common/AreYouSureDialog.test.js",
+                                "changes": [],
+                                "_id": "65af6563853ef8535f03710d"
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03710a"
+                    }
+                ],
+                "serviceGenerationTemplates": [],
+                "skip": false,
+                "environments": []
+            },
+            {
+                "appName": "react-frontend",
+                "pathToLogo": {
+                    "s": "/assets/applications_logos/react-s.png",
+                    "l": "/assets/applications_logos/react.png"
+                },
+                "disabled": false,
+                "type": "frontend",
+                "name": "react",
+                "label": "React JavaScript",
+                "appGenerationTemplates": [
+                    {
+                        "dbService": "templates",
+                        "name": "cb-react-prime-template",
+                        "repoName": "",
+                        "ref": "",
+                        "userName": "",
+                        "githubRepoLocation": "",
+                        "skip": false,
+                        "codeChanges": [
+                            {
+                                "location": "",
+                                "filename": "package.json",
+                                "templateLocalFile": "",
+                                "changes": [
+                                    {
+                                        "typeOfChange": "string-replace",
+                                        "from": "~cb-app-name~",
+                                        "to": "stack.appName",
+                                        "_id": "65af6563853ef8535f037111"
+                                    }
+                                ],
+                                "_id": "65af6563853ef8535f037110"
+                            },
+                            {
+                                "location": "src/",
+                                "filename": "AppTopbar.js",
+                                "templateLocalFile": "",
+                                "changes": [
+                                    {
+                                        "typeOfChange": "string-replace",
+                                        "from": "~cb-app-name~",
+                                        "to": "stack.appName",
+                                        "_id": "65af6563853ef8535f037113"
+                                    }
+                                ],
+                                "_id": "65af6563853ef8535f037112"
+                            },
+                            {
+                                "location": "src/components/common/__test__/",
+                                "filename": "AreYouSureDialog.test.js",
+                                "templateLocalFile": "./react_prime/TestScripts/common/AreYouSureDialog.test.js",
+                                "changes": [],
+                                "_id": "65af6563853ef8535f037114"
+                            },
+                            {
+                                "location": "src/components/common/__test__/",
+                                "filename": "EditSaveCancelComponent.test.js",
+                                "templateLocalFile": "./react_prime/TestScripts/common/EditSaveCancelComponent.test.js",
+                                "changes": [],
+                                "_id": "65af6563853ef8535f037115"
+                            },
+                            {
+                                "location": "src/components/Dashboard/__test__/",
+                                "filename": "Dashboard.test.js",
+                                "templateLocalFile": "./react_prime/TestScripts/Dashboard/Dashboard.test.js",
+                                "changes": [],
+                                "_id": "65af6563853ef8535f037116"
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03710f"
+                    }
+                ],
+                "serviceGenerationTemplates": [
+                    {
+                        "templateLocalFile": "./react_prime/ServicePage/~cb-service-name-capitalize~Page(paid).js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "generateRelationshipFunction",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037118",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037119",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037117"
+                    },
+                    {
+                        "templateLocalFile": "./react_prime/TestScripts/ServicePage/~cb-service-name-capitalize~Page.test.js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/__test__/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03711b",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03711c",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03711a"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "generateReactPrimeDataTable",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "_id": "65af6563853ef8535f03711d",
+                        "changes": []
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "generateReactPrimeDialogCreate",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03711f",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037120",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03711e"
+                    },
+                    {
+                        "templateLocalFile": "./react_prime/TestScripts/ServicePage/~cb-service-name-capitalize~CreateDialogComponent.test.js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/__test__/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037122",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037123",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037121"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "generateReactPrimeDialogEdit",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037125",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037126",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037124"
+                    },
+                    {
+                        "templateLocalFile": "./react_prime/TestScripts/ServicePage/~cb-service-name-capitalize~EditDialogComponent.test.js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/__test__/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037128",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037129",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037127"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "generateSingleServicePage",
+                        "customSeederFunction": "",
+                        "description": "SINGLE SERVICE PAGE",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03712b",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03712c",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03712a"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/MyRouter/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "",
+                        "renameFile": {
+                            "from": "",
+                            "to": ""
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03712e",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03712f",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037130",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037131",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f03712d"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/Dashboard/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "ADD CLICKABLE SERVICE CARD TO DASHBOARD FILE",
+                        "renameFile": {
+                            "from": "",
+                            "to": ""
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037133",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037132"
+                    },
+                    {
+                        "templateLocalFile": "./react_prime/FakerDialog/~cb-service-name-capitalize~FakerDialogComponent.js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "FAKER",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037135",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037136",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037134"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "generateReactPrimeFakerFactory",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "FAKER",
+                        "_id": "65af6563853ef8535f037137",
+                        "changes": []
+                    },
+                    {
+                        "templateLocalFile": "./react_prime/Seeder/~cb-service-name-capitalize~SeederDialogComponent.js",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "",
+                        "description": "SEEDER",
+                        "renameFile": {
+                            "from": "~cb-service-name-capitalize~",
+                            "to": "service.serviceName"
+                        },
+                        "changes": [
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f037139",
+                                "changes": []
+                            },
+                            {
+                                "location": "",
+                                "filename": "",
+                                "templateLocalFile": "",
+                                "_id": "65af6563853ef8535f03713a",
+                                "changes": []
+                            }
+                        ],
+                        "_id": "65af6563853ef8535f037138"
+                    },
+                    {
+                        "templateLocalFile": "",
+                        "destFolder": "src/components/~cb-service-name-capitalize~Page/",
+                        "githubRepoLocation": "",
+                        "customFunction": "",
+                        "customRelationshipFunction": "",
+                        "customSinglePageServiceFunction": "",
+                        "customSeederFunction": "generateReactPrimeSeeder",
+                        "description": "SEEDER - todo paid users only",
+                        "_id": "65af6563853ef8535f03713b",
+                        "changes": []
+                    }
+                ],
+                "skip": false,
+                "environments": []
+            }
+        ],
+        "services": [
+            {
+                "serviceName": "users",
+                "schemaList": [
+                    {
+                        "fieldName": "name",
+                        "type": "String",
+                        "display": true,
+                        "component": "p",
+                        "label": "Name",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "email",
+                        "type": "String",
+                        "unique": true,
+                        "lowercase": true,
+                        "display": true,
+                        "component": "p",
+                        "label": "Email",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "password",
+                        "type": "String",
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "is_email_verified",
+                        "type": "Boolean",
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": false,
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "remember_token",
+                        "type": "Boolean",
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "email_verified_at",
+                        "type": "DateTime",
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "string",
+                "schemaList": [
+                    {
+                        "fieldName": "text",
+                        "type": "String",
+                        "display": true,
+                        "component": "p",
+                        "label": "text",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "Hello world",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "input",
+                        "type": "String",
+                        "display": true,
+                        "component": "input",
+                        "label": "input",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "hello",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "icon",
+                        "type": "String",
+                        "display": true,
+                        "component": "icon",
+                        "label": "icon",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "image",
+                        "type": "String",
+                        "display": true,
+                        "component": "image",
+                        "label": "image",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "avatar",
+                        "type": "String",
+                        "display": true,
+                        "component": "avatar",
+                        "label": "avatar",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "chip",
+                        "type": "String",
+                        "display": true,
+                        "component": "chip",
+                        "label": "chip",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "tag",
+                        "type": "String",
+                        "display": true,
+                        "component": "tag",
+                        "label": "tag",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "valid",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "boolean",
+                "schemaList": [
+                    {
+                        "fieldName": "text",
+                        "type": "Boolean",
+                        "display": true,
+                        "component": "p",
+                        "label": "text",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": false,
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "tick",
+                        "type": "Boolean",
+                        "display": true,
+                        "component": "tick",
+                        "label": "tick",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": false,
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "checkbox",
+                        "type": "Boolean",
+                        "display": true,
+                        "component": "checkbox",
+                        "label": "checkbox",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": false,
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "switch",
+                        "type": "Boolean",
+                        "display": true,
+                        "component": "switch",
+                        "label": "switch",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": false,
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "number",
+                "schemaList": [
+                    {
+                        "fieldName": "text",
+                        "type": "Number",
+                        "display": true,
+                        "component": "p",
+                        "label": "text",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "input",
+                        "type": "Number",
+                        "display": true,
+                        "component": "input",
+                        "label": "input",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "badge",
+                        "type": "Number",
+                        "display": true,
+                        "component": "badge",
+                        "label": "badge",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "23",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "knob",
+                        "type": "Number",
+                        "display": true,
+                        "component": "knob",
+                        "label": "knob",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "23",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "rating",
+                        "type": "Number",
+                        "display": true,
+                        "component": "rating",
+                        "label": "rating",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "1",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "slider",
+                        "type": "Number",
+                        "display": true,
+                        "component": "slider",
+                        "label": "slider",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "50",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "progressbar",
+                        "type": "Number",
+                        "display": true,
+                        "component": "progressBar",
+                        "label": "progressbar",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "default": "50",
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "date",
+                "schemaList": [
+                    {
+                        "fieldName": "dateText",
+                        "type": "Date",
+                        "display": true,
+                        "component": "p",
+                        "label": "dateText",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    },
+                    {
+                        "fieldName": "Calendar",
+                        "type": "Date",
+                        "display": true,
+                        "component": "calendar",
+                        "label": "Calendar",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "array",
+                "schemaList": [
+                    {
+                        "fieldName": "array",
+                        "type": "Array",
+                        "label": "array",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            },
+            {
+                "serviceName": "object",
+                "schemaList": [
+                    {
+                        "fieldName": "object",
+                        "type": "Object",
+                        "label": "object",
+                        "sortable": true,
+                        "editable": true,
+                        "lazy": false,
+                        "reverse": false,
+                        "morph": false,
+                        "through": false,
+                        "args": [],
+                        "reference": {
+                            "identifierFieldName": []
+                        }
+                    }
+                ],
+                "layout": false,
+                "seeder": [],
+                "skip": false
+            }
+        ]
+    }
+]
